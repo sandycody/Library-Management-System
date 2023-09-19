@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <style>
+        /* CSS styles for the container */
+        body {
+            background-color: lightblue;
+        }
+
+        .container {
+            width: 35%;
+            height: 720px;
+            margin: 0 auto;
+            padding: 1px 70px;
+            background-color: #bbb7c3;
+            border: 1px solid #ccc;
+        }
+
+        .container p {
+            text-align: center;
+            margin: 10px;
+            padding: 7px;
+        }
+
+        .nestContainer1 {
+            background-color: #3f3fd8;
+            text-align: center;
+            padding: 12px 1px;
+            width: 50%;
+            /* margin: 25px auto; */
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: 120px;
+            margin-bottom: 32px;
+            padding-bottom: 24px
+        }
+
+        .nestContainer1 .downText1 {
+            float: left;
+            margin-left: 54px;
+        }
+
+        .nestContainer1 .downText2 {
+            float: right;
+            margin-right: 55px;
+        }
+
+        .nestContainer2 {
+            background-color: #3f3fd8;
+            text-align: center;
+            padding: 12px 1px;
+            width: 30%;
+            margin: 25px auto;
+        }
+
+        .nestContainerLeft {
+            float: left;
+            background-color: #3f3fd8;
+            text-align: center;
+            padding: 12px 1px 12px;
+            width: 46%;
+            /* margin: 25px auto; */
+            border-radius: 10px;
+            margin-left: -31px;
+            margin-right: 89px;
+            margin-bottom: -68px;
+            margin-top: 40px;
+        }
+
+        .nestContainerRight {
+            float: right;
+            background-color: #3f3fd8;
+            text-align: center;
+            padding: 12px 1px 12px;
+            width: 46%;
+            margin: 25px auto;
+            border-radius: 10px;
+
+        }
+
+        .nestContainerRight #payMethod {
+            background-color: #3f3fd8;
+        }
+
+        .nestContainerRight #payMethod option {
+            background-color: white;
+        }
+
+        .nestContainerLast {
+            background-color: #3f3fd8;
+            text-align: center;
+            padding: 12px 1px;
+            width: 51%;
+            margin: 25px auto;
+            border-radius: 10px;
+            margin: 35px 105px;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Container div -->
+    <div class="container">
+        <div class="nestContainer1">
+            <div class="upText">Item</div>
+            <span class="downText1">Grand Total</span>
+            <span class="downText2">200/-</span>
+        </div>
+        <div class="nestContainer2">
+            Details
+        </div>
+        <button class="nestContainerLeft">
+            Name
+        </button>
+        <button class="nestContainerRight">
+            Number
+        </button>
+        <button class="nestContainerLeft">
+            Email
+        </button>
+        <button class="nestContainerRight">
+            <select name="Payment Method" id="payMethod">
+                <option value="Payment Method checked">Payment Method</option>
+                <option value="Cash">Cash</option>
+                <option value="UPI">UPI</option>
+            </select>
+        </button>
+        <button class="nestContainerLeft">
+            Address
+        </button>
+        <button class="nestContainerRight">
+            State
+        </button>
+        <button class="nestContainerLeft">
+            City
+        </button>
+        <button class="nestContainerRight">
+            PinCode
+        </button>
+        <button class="nestContainerLast">
+            Order Now
+        </button>
+    </div>
+</body>
+
+</html>
